@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b12">
+  <title>KYIV RP — портал</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="aurora"></div>
+  <header class="topbar">
+    <a class="brand" href="#home">KYIV <span>RP</span></a>
+    <a class="login-link" href="#account">Вхід / Реєстрація</a>
+  </header>
+
+  <main id="home" class="container">
+    <section class="hero">
+      <p class="eyebrow">ОФІЦІЙНИЙ ІГРОВИЙ ПОРТАЛ</p>
+      <h1>Ласкаво просимо до <span>KYIV RP</span></h1>
+      <p class="intro">Створи свій акаунт, обери шлях і стань частиною історії.</p>
+      <div class="actions">
+        <a class="button primary" href="#account">Створити акаунт</a>
+        <a class="button secondary" href="#factions">Переглянути фракції</a>
+      </div>
+    </section>
+
+    <section id="account" class="panel">
+      <div>
+        <p class="eyebrow">ОСОБИСТИЙ КАБІНЕТ</p>
+        <h2>Вхід або реєстрація</h2>
+        <p class="muted">Це поки що демонстраційна форма дизайну. Справжню реєстрацію підключимо через захищену базу даних на наступному етапі.</p>
+      </div>
+      <form id="demo-form">
+        <label for="nickname">Ігровий нік</label>
+        <input id="nickname" name="nickname" autocomplete="username" minlength="3" maxlength="20" placeholder="Наприклад, Player_123" required>
+        <label for="password">Пароль (мінімум 6 символів)</label>
+        <input id="password" name="password" type="password" autocomplete="new-password" minlength="6" placeholder="Введи пароль" required>
+        <div class="actions form-actions">
+          <button class="button primary" type="submit">Продовжити</button>
+        </div>
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="factions" class="factions">
+      <p class="eyebrow">ОБИРАЙ СВІЙ ШЛЯХ</p>
+      <h2>Наші фракції</h2>
+      <div class="faction-grid">
+        <article class="faction-card">СБУ</article>
+        <article class="faction-card">ДБР</article>
+        <article class="faction-card">НПУ</article>
+        <article class="faction-card">ДСНС</article>
+        <article class="faction-card">АДВОКАТУРА</article>
+        <article class="faction-card">СУДДІ</article>
+        <article class="faction-card">ПРОКУРАТУРА</article>
+      </div>
+    </section>
+
+    <footer>KYIV RP · Ігровий портал</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
