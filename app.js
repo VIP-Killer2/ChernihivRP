@@ -19,7 +19,7 @@ form.addEventListener("submit", (event) => {
 
   message.textContent = `Дякуємо, ${nickname}! Це лише тест форми — акаунт ще не створено.`;
 });
-const SUPABASE_URL = "https://ztyknchaetzrbiwtjaoj.supabase.co/rest/v1/";
+const SUPABASE_URL = "https://ztyknchaetzrbiwtjaoj.supabase.co";
 const SUPABASE_KEY = "sb_publishable_vShvdUI3c-c2argPHzJmxw_8C5DH2NY";
 
 const supabase = window.supabase.createClient(
